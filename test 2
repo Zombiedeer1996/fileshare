@@ -1,0 +1,63 @@
+<script type="text/javascript">
+<!--
+var moreCustomers = "yes";
+var hotdogRate = 2;
+var hamburgerRate = 4;
+var corndogRate = 3;
+var nachoRate = 5;
+//loop start
+while (moreCustomers == "yes");
+{
+ food = prompt("what type of food? (hotdog/hamburger/corndog/nacho)", "hotdog");
+ numFood = prompt("How many do you want?","1");
+ 
+ switch (food)
+ {
+  case ("hotdog"):
+  hotdogAccum =hotdogAccum + numFood;
+  hotdogTotal = hotdogAccum * hotdogRate;
+  //alert("The total number of hotdog purchased: " + hotdogAccum);
+  //alert("The total dollar amount for hotdogs: $" + hotdogTotal);
+  break;
+ 
+  case ("hamburger"):
+  hamburgerAccum = hamburgerAccum + numFood;
+  hameburgerTotal = hamburgerAccum * hamburgerRate; 
+  //alert("The total number of hamburger purchased: " + hamburgerAccum);
+  //alert("The total dollar amount for Hamburgers: $" + hamburgerTotal);
+  break;
+ 
+  case ("corndog"):
+  corndogAccum = corndogAccum + numFood;
+  corndogTotal = corndogAccum * corndogRate;
+  //alert("The total number of corndog purchased: " + corndogAccum);
+  //alert("The total dollar amount for corndogTotal s: $" + corndogTotal);
+  break;
+ 
+  case("nacho"):
+  nachoAccum = nachoAccum + numFood;
+  nachoTotal = nachoAccum * nachoRate;
+  //alert("The total number of  nachos purchased: " + nachosAccum);
+  //alert("The total dollar amount for nachos: $" + nachosTotal);
+  break;
+ 
+  default:
+  alert("you typed " + food + " you ment to type (hotdog/hamburger/corndog/nacho)");
+  break;
+}
+ 
+moreCustomers = prompt("any more customers? (yes/no)","yes");
+
+}//end loop
+//alert("done looping");
+document.write("<br>The total number of hotdog purchased: " + hotdogAccum);
+document.write("<br>The total number of hamburger purchased: " + hamburgerAccum);
+document.write("<br>The total number of corndog purchased: " + corndogAccum);
+document.write("<br>The total number of  nachos purchased: " + nachosAccum);
+document.write("The total dollar amount for hotdogs: $" + hotdogTotal);
+document.write("<br>The total dollar amount for Hamburgers: $" + hamburgerTotal);
+document.write("<br>The total dollar amount for corndogTotal s: $" + corndogTotal);
+document.write("<br>The total dollar amount for nachos: $" + nachosTotal);
+
+// -->
+</script>
