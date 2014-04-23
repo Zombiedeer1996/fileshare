@@ -17,43 +17,35 @@ var nachosTotal = 0;
 while (moreCustomers == "yes")
 {
  food = prompt("what type of food? (hotdog/hamburger/corndog/nacho)", "hotdog");
- numFood = prompt("How many do you want?","1");
+ numFood = parseInt(prompt("How many do you want?","1"));
 
  
  switch (food)
  {
   case ("hotdog"):
   hotdogAccum =hotdogAccum + numFood;
-	hotdogAccum = parseInt(hotdogAccum);
   hotdogTotal = hotdogAccum * hotdogRate;
-	hotdogTotal = parseInt(hotdogTotal);
   //alert("The total number of hotdog purchased: " + hotdogAccum);
   //alert("The total dollar amount for hotdogs: $" + hotdogTotal);
   break;
  
   case ("hamburger"):
   hamburgerAccum = hamburgerAccum + numFood;
-	hamburgerAccum = parseInt(hamburgerAccum);
   hamburgerTotal = hamburgerAccum * hamburgerRate; 
-	hamburgerTotal = parseInt(hamburgerTotal);
   //alert("The total number of hamburger purchased: " + hamburgerAccum);
   //alert("The total dollar amount for Hamburgers: $" + hamburgerTotal);
   break;
  
   case ("corndog"):
   corndogAccum = corndogAccum + numFood;
-	corndogAccum = parseInt(corndogAccum);
   corndogTotal = corndogAccum * corndogRate;
-	corndogTotal = parseInt(corndogTotal);
   //alert("The total number of corndog purchased: " + corndogAccum);
   //alert("The total dollar amount for corndogTotal s: $" + corndogTotal);
   break;
  
   case("nacho"):
   nachosAccum = nachosAccum + numFood;
-	nachosAccum = parseInt(nachosAccum);
   nachosTotal = nachosAccum * nachoRate;
-	nachosTotal = parseInt(nachosTotal);
   //alert("The total number of  nachos purchased: " + nachosAccum);
   //alert("The total dollar amount for nachos: $" + nachosTotal);
   break;
