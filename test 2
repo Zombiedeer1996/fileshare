@@ -5,38 +5,55 @@ var hotdogRate = 2;
 var hamburgerRate = 4;
 var corndogRate = 3;
 var nachoRate = 5;
+var hotdogAccum = 0;
+var hamburgerAccum = 0;
+var corndogAccum = 0;
+var nachosAccum = 0;
+var hotdogTotal = 0;
+var hamburgerTotal = 0;
+var corndogTotal = 0;
+var nachosTotal = 0;
 //loop start
-while (moreCustomers == "yes");
+while (moreCustomers == "yes")
 {
  food = prompt("what type of food? (hotdog/hamburger/corndog/nacho)", "hotdog");
  numFood = prompt("How many do you want?","1");
+
  
  switch (food)
  {
   case ("hotdog"):
   hotdogAccum =hotdogAccum + numFood;
+	hotdogAccum = parseInt(hotdogAccum);
   hotdogTotal = hotdogAccum * hotdogRate;
+	hotdogTotal = parseInt(hotdogTotal);
   //alert("The total number of hotdog purchased: " + hotdogAccum);
   //alert("The total dollar amount for hotdogs: $" + hotdogTotal);
   break;
  
   case ("hamburger"):
   hamburgerAccum = hamburgerAccum + numFood;
-  hameburgerTotal = hamburgerAccum * hamburgerRate; 
+	hamburgerAccum = parseInt(hamburgerAccum);
+  hamburgerTotal = hamburgerAccum * hamburgerRate; 
+	hamburgerTotal = parseInt(hamburgerTotal);
   //alert("The total number of hamburger purchased: " + hamburgerAccum);
   //alert("The total dollar amount for Hamburgers: $" + hamburgerTotal);
   break;
  
   case ("corndog"):
   corndogAccum = corndogAccum + numFood;
+	corndogAccum = parseInt(corndogAccum);
   corndogTotal = corndogAccum * corndogRate;
+	corndogTotal = parseInt(corndogTotal);
   //alert("The total number of corndog purchased: " + corndogAccum);
   //alert("The total dollar amount for corndogTotal s: $" + corndogTotal);
   break;
  
   case("nacho"):
-  nachoAccum = nachoAccum + numFood;
-  nachoTotal = nachoAccum * nachoRate;
+  nachosAccum = nachosAccum + numFood;
+	nachosAccum = parseInt(nachosAccum);
+  nachosTotal = nachosAccum * nachoRate;
+	nachosTotal = parseInt(nachosTotal);
   //alert("The total number of  nachos purchased: " + nachosAccum);
   //alert("The total dollar amount for nachos: $" + nachosTotal);
   break;
@@ -54,7 +71,7 @@ document.write("<br>The total number of hotdog purchased: " + hotdogAccum);
 document.write("<br>The total number of hamburger purchased: " + hamburgerAccum);
 document.write("<br>The total number of corndog purchased: " + corndogAccum);
 document.write("<br>The total number of  nachos purchased: " + nachosAccum);
-document.write("The total dollar amount for hotdogs: $" + hotdogTotal);
+document.write("<br>The total dollar amount for hotdogs: $" + hotdogTotal);
 document.write("<br>The total dollar amount for Hamburgers: $" + hamburgerTotal);
 document.write("<br>The total dollar amount for corndogTotal s: $" + corndogTotal);
 document.write("<br>The total dollar amount for nachos: $" + nachosTotal);
