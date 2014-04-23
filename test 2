@@ -58,6 +58,7 @@ while (moreCustomers == "yes")
 moreCustomers = prompt("any more customers? (yes/no)","yes");
 
 }//end loop
+moneyTotal = nachosTotal + corndogTotal + hamburgerTotal + hotdogTotal;
 //alert("done looping");
 document.write("<br>The total number of hotdog purchased: " + hotdogAccum);
 document.write("<br>The total number of hamburger purchased: " + hamburgerAccum);
@@ -65,8 +66,6 @@ document.write("<br>The total number of corndog purchased: " + corndogAccum);
 document.write("<br>The total number of  nachos purchased: " + nachosAccum);
 document.write("<br>The total dollar amount for hotdogs: $" + hotdogTotal);
 document.write("<br>The total dollar amount for Hamburgers: $" + hamburgerTotal);
-document.write("<br>The total dollar amount for corndogTotal s: $" + corndogTotal);
+document.write("<br>The total dollar amount for corndogTotal: $" + corndogTotal);
 document.write("<br>The total dollar amount for nachos: $" + nachosTotal);
-
-// -->
-</script>
+document.write("<br>The total dollar amount earned is: $" + moneyTotal);
